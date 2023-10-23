@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Swayam-admin/static/css/main.71d2c47e.css",
-    "main.js": "/Swayam-admin/static/js/main.68e9b89f.js",
-    "static/media/logo.png": "/Swayam-admin/static/media/logo.a607672882bc95f6d66f.png",
-    "static/media/Proxima Nova Font.otf": "/Swayam-admin/static/media/Proxima Nova Font.7bc9ce404c297c24f210.otf",
-    "index.html": "/Swayam-admin/index.html",
-    "main.71d2c47e.css.map": "/Swayam-admin/static/css/main.71d2c47e.css.map",
-    "main.68e9b89f.js.map": "/Swayam-admin/static/js/main.68e9b89f.js.map"
+    "main.css": "/Swayam-Admin/static/css/main.17269b6f.css",
+    "main.js": "/Swayam-Admin/static/js/main.4ea96629.js",
+    "static/media/logo.png": "/Swayam-Admin/static/media/logo.a607672882bc95f6d66f.png",
+    "static/media/Proxima Nova Font.otf": "/Swayam-Admin/static/media/Proxima Nova Font.7bc9ce404c297c24f210.otf",
+    "index.html": "/Swayam-Admin/index.html",
+    "main.17269b6f.css.map": "/Swayam-Admin/static/css/main.17269b6f.css.map",
+    "main.4ea96629.js.map": "/Swayam-Admin/static/js/main.4ea96629.js.map"
   },
   "entrypoints": [
-    "static/css/main.71d2c47e.css",
-    "static/js/main.68e9b89f.js"
+    "static/css/main.17269b6f.css",
+    "static/js/main.4ea96629.js"
   ]
 }
