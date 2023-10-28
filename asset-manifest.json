@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Swayam-Admin/static/css/main.c896a7ec.css",
-    "main.js": "/Swayam-Admin/static/js/main.8a1bbea3.js",
+    "main.js": "/Swayam-Admin/static/js/main.b3a73857.js",
     "static/media/logo.png": "/Swayam-Admin/static/media/logo.a607672882bc95f6d66f.png",
     "static/media/Proxima Nova Font.otf": "/Swayam-Admin/static/media/Proxima Nova Font.7bc9ce404c297c24f210.otf",
     "index.html": "/Swayam-Admin/index.html",
     "main.c896a7ec.css.map": "/Swayam-Admin/static/css/main.c896a7ec.css.map",
-    "main.8a1bbea3.js.map": "/Swayam-Admin/static/js/main.8a1bbea3.js.map"
+    "main.b3a73857.js.map": "/Swayam-Admin/static/js/main.b3a73857.js.map"
   },
   "entrypoints": [
     "static/css/main.c896a7ec.css",
-    "static/js/main.8a1bbea3.js"
+    "static/js/main.b3a73857.js"
   ]
 }
