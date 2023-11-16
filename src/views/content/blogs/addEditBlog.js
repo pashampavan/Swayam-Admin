@@ -39,7 +39,13 @@ const AddEditBlog = () => {
 
   const handleContentChange = (field, value, index) => {
     const updatedContent = [...blogContent];
-    const content = { [field]: value.trim() };
+    console.log(JSON.stringify(value));
+    const content={[field]:value};
+    if(field!='image')
+    {
+      console.log('not image');
+      const content = { [field]: value.trim() };
+    }
     updatedContent[index] = content;
     setBlogContent(updatedContent);
   };
@@ -273,10 +279,10 @@ const AddEditBlog = () => {
                 <Box display="block" alignItems="center" justifyContent="space-between" mb={2}>
                   <Typography>Image:</Typography>
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                    {item.image ? (
+                    { item.image && (item.image).slice(0, 8) === "https://" ? (
                       <img src={item.image} alt="Thumbnail" width={'40%'} />
                     ) : (
-                      <input type="file" accept="image/*" required onChange={(e) => handleContentChange('image', e.target.files[0], index)} />
+                      <input type="file" accept="image/*" required onChange={(e) => handleContentChange('image',e.target.files[0], index)} />
                     )}
                     <IconButton onClick={() => handleDeleteContent(index)}>
                       <DeleteIcon />
@@ -304,7 +310,7 @@ const AddEditBlog = () => {
         <Button variant="contained" size="small" onClick={() => handleContentChange('note', '', blogContent.length)} startIcon={<FormatQuote />} sx={{ mr: 1 }}>
           Add Note
         </Button>
-        <Button variant="contained" size="small" onClick={() => handleContentChange('image', null, blogContent.length)} startIcon={<Image />} sx={{ mr: 1 }}>
+        <Button variant="contained" size="small" onClick={() => handleContentChange('image',null, blogContent.length)} startIcon={<Image />} sx={{ mr: 1 }}>
           Add Image
         </Button>
       </Box>

@@ -190,7 +190,11 @@
         padding:50px auto;
     
     }
-    
+    #logo
+    {
+        top: -35%;
+        left: 14%;
+    }
     .navbar ul{
         display: flex;
     }

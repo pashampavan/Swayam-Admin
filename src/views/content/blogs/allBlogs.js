@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Thumbnail from './thumbnail';
 import apiServices from '../../../services/apiServices';
-
+import './blocks.css';
 const AllBlogs = () => {
   const navigate = useNavigate();
   const [blogs, setBlogs] = useState({});
@@ -37,11 +37,12 @@ const AllBlogs = () => {
           >+</Button>
         </div>
 
-        <div style={{ width: "100%", margin: '25px auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' }}>
+        <div id="allblocks">
           {blogIds.map((blogId) => {
             const blog = blogs[blogId];
+            console.log(blog);
             return (
-              <div key={blogId}>
+              <div key={blogId} className="blog">
                 <Thumbnail
                   date={blog.blogdate}
                   title={blog.blogtitle}

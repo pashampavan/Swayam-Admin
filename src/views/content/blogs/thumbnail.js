@@ -57,7 +57,7 @@ const Thumbnail = ({ date, title, description, thumbnail, id }) => {
   };
 
   return (
-    <Card variant="outlined" sx={cardStyle}>
+    <Card variant="outlined" sx={cardStyle} style={{width:"auto",height:"auto"}}>
       <CardContent style={{position:"relative", fontFamily: 'Proxima Nova',}}>
         <img src={thumbnail} style={{ width: '100%', height: '150px', objectFit: 'cover' }} alt="Blog Thumbnail" />
         <Typography variant="subtitle2" color="textSecondary" gutterBottom style={{ marginTop: '10px' }}>
@@ -65,9 +65,6 @@ const Thumbnail = ({ date, title, description, thumbnail, id }) => {
         </Typography>
         <Typography variant="h6" component="div" style={{ marginTop: '10px' }}>
           <b>{title}</b>
-        </Typography>
-        <Typography variant="body2" color="textSecondary" style={descriptionStyle}>
-          {description}
         </Typography>
         <div style={{ display: 'flex', justifyContent: 'end', alignItems: 'center', marginTop: '0px' }}>
           <IconButton onClick={handleEditBlog}>

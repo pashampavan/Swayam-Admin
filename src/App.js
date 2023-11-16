@@ -1,6 +1,6 @@
 import './App.css';
 import { Navigate, Route, Routes } from 'react-router-dom';
-
+import { useState } from 'react';
 import Dashboard from './views/dashboard';
 import Content from './views/content';
 import Events from './views/events';
@@ -11,13 +11,15 @@ import AddEditBlog from './views/content/blogs/addEditBlog';
 import NavBar from './components/NavBar';
 import AllEvents from './views/events/allEvents';
 import AddEditEvent from './views/events/addEditEvent';
-
 function App() {
+  const [login,setLogin]=useState(null);
   return (
     <>
-    <NavBar/>
+    <NavBar login={login} setLogin={setLogin}/>
     <Routes>
+        <Route path='/Swayam-Admin' element={<Login  setLogin={setLogin}/>} />
         <Route path='/user/*' element={<User />} />
+        <Route path='/login' exact element={<Login setLogin={setLogin} />} />
         <Route path="/dashboard" exact element={<Dashboard />} />
         <Route path='/content' exact element={<Content />} />
         <Route path='/events' exact element={<Events />} />

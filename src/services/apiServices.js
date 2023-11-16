@@ -54,7 +54,7 @@ class ApiServices {
 
   updateBlog = async (id, newBlog) => {
     try {
-        const response = await apiClient.post(`/blogs/${id}.json`, newBlog);
+        const response = await apiClient.put(`/blogs/${id}.json`, newBlog);
         return response;
       } catch (err) {
         console.error(`Error: ${err}`);
