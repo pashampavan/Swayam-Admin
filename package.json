@@ -1,6 +1,6 @@
 {
   "name": "swayam-admin",
-  "homepage": "https://pashampavan.github.io/Swayam-Admin",
+  "homepage": "https://swayam.vce.ac.in/admin/",
   "version": "0.1.0",
   "private": false,
   "dependencies": {

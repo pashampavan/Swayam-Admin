@@ -18,6 +18,7 @@ function App() {
     <NavBar login={login} setLogin={setLogin}/>
     <Routes>
         <Route path='/Swayam-Admin' element={<Login  setLogin={setLogin}/>} />
+        <Route path='/admin' element={<Login  setLogin={setLogin}/>} />
         <Route path='/user/*' element={<User />} />
         <Route path='/login' exact element={<Login setLogin={setLogin} />} />
         <Route path="/dashboard" exact element={<Dashboard />} />
